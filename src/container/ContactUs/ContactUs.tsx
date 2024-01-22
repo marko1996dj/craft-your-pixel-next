@@ -1,6 +1,6 @@
 import LottiePlayer from "@/lib/LottiePlayer/LottiePlayer";
 import { Typography, Box, Stack } from "@mui/material";
-import aboutUs from "@/data/illustrations/who-are-we.json";
+// import aboutUs from "@/data/illustrations/who-are-we.json";
 
 /**
  * React component representing the ContactUs section of page.
