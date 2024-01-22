@@ -28,10 +28,10 @@ function ContactUs() {
           </Typography>
         </Stack>
         <Stack width={{ xs: "100%", md: "40%" }}>
-          <LottiePlayer
+          {/* <LottiePlayer
             src={aboutUs}
             style={{ width: "100%", height: "auto" }}
-          />
+          /> */}
         </Stack>
       </Stack>
     </Box>
