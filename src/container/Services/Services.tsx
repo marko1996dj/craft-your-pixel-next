@@ -14,9 +14,6 @@ import { useEffect } from 'react';
  * @returns {JSX.Element} The rendered Services component.
  */
 function Services() {
-    useEffect(() => {
-        console.log(designSvg);
-    });
     const servicesData = [
         {
             title: 'Custom Website Design',

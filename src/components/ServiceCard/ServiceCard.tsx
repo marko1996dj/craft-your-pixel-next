@@ -33,11 +33,15 @@ function ServiceCard({
                     width: 'auto',
                 }}
             />
-            <CardContent>
-                <Typography variant="h6" component="div">
+            <CardContent
+                sx={{
+                    minHeight: '130px',
+                }}
+            >
+                <Typography variant="body1" component="h3" fontSize="18px">
                     {service.title}
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" component="p" fontSize="14px">
                     {service.description}
                 </Typography>
             </CardContent>

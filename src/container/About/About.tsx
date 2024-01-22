@@ -19,18 +19,15 @@ function About() {
                 mt={3}
             >
                 <Stack width={{ xs: '100%', md: '50%' }}>
-                    <Typography
-                        variant="body1"
-                        fontSize="1.7rem"
-                        width={{ xs: '100%', md: '80%' }}
-                    >
-                        Craft Your Pixel is a passionate team of web designers
-                        and developers committed to crafting exceptional digital
-                        experiences. With 10 years of expertise, we blend
-                        creativity and technology to bring your vision to life.
+                    <Typography variant="body1" fontSize="1.3rem" width="100%">
+                        Craft Your Pixel is a passionate team of web designers,
+                        developers, marketing and finance experts committed to
+                        crafting exceptional digital experiences. With 10 years
+                        of expertise, we blend creativity and technology to
+                        bring your vision to life.
                     </Typography>
                 </Stack>
-                <Stack width={{ xs: '100%', md: '50%' }}>
+                <Stack width={{ xs: '100%', md: '40%' }}>
                     <AboutUs />
                 </Stack>
             </Stack>
