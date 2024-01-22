@@ -1,0 +1,56 @@
+{
+  "content": {
+    "homePage": {
+      "title": "Welcome to Craft Your Pixel",
+      "description": "We transform ideas into digital reality. Explore our innovative web and mobile solutions that elevate your online presence."
+    },
+    "aboutUs": {
+      "title": "Who We Are",
+      "description": "Craft Your Pixel is a passionate team of web designers and developers committed to crafting exceptional digital experiences. With 10 years of expertise, we blend creativity and technology to bring your vision to life."
+    },
+    "services": {
+      "title": "Our Expertise",
+      "description": "Explore our comprehensive range of services: Custom Website Design, Responsive Web Development, Mobile App Development (iOS & Android), E-commerce Solutions, UI/UX Design, Website Maintenance."
+    },
+    "portfolio": {
+      "title": "Our Work",
+      "description": "View our portfolio showcasing the diverse projects we've undertaken. Witness the seamless integration of design and functionality that sets our work apart."
+    },
+    "caseStudies": {
+      "title": "Success Stories",
+      "description": "Dive deeper into our success stories. Learn how we have helped businesses like yours achieve their digital goals through tailored solutions and innovative strategies."
+    },
+    "process": {
+      "title": "How We Work",
+      "description": "Discover our streamlined development process. From concept to delivery, we ensure transparent communication and collaboration, keeping you informed at every stage."
+    },
+    "blog": {
+      "title": "Insights & Trends",
+      "description": "Stay updated with the latest trends, industry insights, and tips from our experts. Explore articles covering web design, development, and digital marketing."
+    },
+    "contactUs": {
+      "title": "Get in Touch",
+      "description": "Reach out to us for inquiries, collaborations, or to discuss your project. We're here to turn your ideas into reality. Let's build something great together!"
+    },
+    "testimonials": {
+      "title": "What Our Clients Say",
+      "description": "Hear from satisfied clients who have experienced the impact of our services firsthand. Discover the value we bring to businesses across different industries."
+    },
+    "faqs": {
+      "question_1": "What services do you offer?",
+      "answer_1": "We offer a range of services including custom website design, responsive web development, mobile app development (iOS and Android), e-commerce solutions, UI/UX design, and website maintenance.",
+      "question_2": "How long does it take to complete a project?",
+      "answer_2": "The timeline for each project varies depending on its complexity and specific requirements. We work closely with our clients to establish realistic timelines and milestones.",
+      "question_3": "What is the cost of your services?",
+      "answer_3": "The cost of our services depends on the scope and complexity of the project. We provide personalized quotes after discussing your specific needs and goals.",
+      "question_4": "Do you offer website maintenance services?",
+      "answer_4": "Yes, we provide ongoing website maintenance services to ensure your site remains secure, up-to-date, and performs optimally. Our maintenance plans are tailored to meet the unique needs of each client.",
+      "question_5": "Can you redesign an existing website?",
+      "answer_5": "Absolutely! We specialize in website redesigns to give your online presence a fresh and modern look. Whether it's a visual makeover or functionality improvements, we've got you covered.",
+      "question_6": "What technologies do you use for web development?",
+      "answer_6": "We leverage a variety of technologies based on project requirements. Our expertise includes but is not limited to HTML, CSS, JavaScript, PHP, and popular CMS platforms such as WordPress.",
+      "question_7": "Do you provide mobile app development for both iOS and Android?",
+      "answer_7": "Yes, we offer mobile app development services for both iOS and Android platforms. Our experienced team ensures that your app is seamlessly optimized for each operating system."
+    }
+  }
+}

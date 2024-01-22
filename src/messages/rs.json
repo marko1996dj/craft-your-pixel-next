@@ -1,0 +1,56 @@
+{
+  "content": {
+    "homePage": {
+      "title": "Dobrodošli u Craft Your Pixel",
+      "description": "Transformišemo ideje u digitalnu stvarnost. Istražite naša inovativna rešenja za veb i mobilne uređaje koja unapređuju vašu online prisutnost."
+    },
+    "aboutUs": {
+      "title": "Ko smo mi",
+      "description": "Craft Your Pixel je strastveni tim veb dizajnera i programera posvećen stvaranju izuzetnih digitalnih iskustava. Sa 10 godina iskustva, kombinujemo kreativnost i tehnologiju kako bismo ostvarili vašu viziju."
+    },
+    "services": {
+      "title": "Naša stručnost",
+      "description": "Upoznajte se sa našim sveobuhvatnim uslugama: Prilagođeni dizajn veb stranica, Odzivni veb razvoj, Razvoj mobilnih aplikacija (iOS i Android), E-trgovinska rešenja, UI/UX dizajn, Održavanje veb stranica."
+    },
+    "portfolio": {
+      "title": "Naš rad",
+      "description": "Pogledajte naš portfelj koji prikazuje raznovrsne projekte koje smo preuzeli. Vidite kako se besprekorno integriše dizajn i funkcionalnost koji čine naš rad posebnim."
+    },
+    "caseStudies": {
+      "title": "Uspešne priče",
+      "description": "Dublje zaronite u naše priče o uspehu. Saznajte kako smo pomogli poslovanjima poput vašeg da postignu svoje digitalne ciljeve putem prilagođenih rešenja i inovativnih strategija."
+    },
+    "process": {
+      "title": "Kako radimo",
+      "description": "Otkrijte naš proces razvoja. Od koncepta do isporuke, obezbeđujemo transparentnu komunikaciju i saradnju, držeći vas informisanim na svakom koraku."
+    },
+    "blog": {
+      "title": "Insajderi i trendovi",
+      "description": "Ostanite informisani najnovijim trendovima, industrijskim uvidima i savetima naših stručnjaka. Pregledajte članke koji pokrivaju dizajn, razvoj i digitalni marketing."
+    },
+    "contactUs": {
+      "title": "Stupite u kontakt",
+      "description": "Obratite nam se za upite, saradnje ili kako bismo razgovarali o vašem projektu. Tu smo da pretvorimo vaše ideje u stvarnost. Izgradimo nešto sjajno zajedno!"
+    },
+    "testimonials": {
+      "title": "Šta kažu naši klijenti",
+      "description": "Čujte od zadovoljnih klijenata koji su iskusili uticaj naših usluga iz prve ruke. Otkrijte vrednost koju donosimo poslovanjima u različitim industrijama."
+    }
+  },
+  "faqs": {
+    "question_1": "Koje usluge pružate?",
+    "answer_1": "Pružamo niz usluga, uključujući prilagođeni dizajn veb stranica, odzivni veb razvoj, razvoj mobilnih aplikacija (iOS i Android), e-trgovinska rešenja, UI/UX dizajn i održavanje veb stranica.",
+    "question_2": "Koliko traje završetak projekta?",
+    "answer_2": "Vreme za svaki projekat varira u zavisnosti od njegove složenosti i specifičnih zahteva. Tesno sarađujemo sa našim klijentima kako bismo utvrdili realne rokove i prekretnice.",
+    "question_3": "Koliko košta vaša usluga?",
+    "answer_3": "Cena naših usluga zavisi od opsega i složenosti projekta. Prilagođavamo cene nakon razgovora o vašim specifičnim potrebama i ciljevima.",
+    "question_4": "Da li pružate usluge održavanja veb stranica?",
+    "answer_4": "Da, pružamo usluge redovnog održavanja veb stranica kako bismo osigurali da vaš sajt ostane bezbedan, ažuriran i optimalno funkcioniše. Naši planovi održavanja prilagođeni su jedinstvenim potrebama svakog klijenta.",
+    "question_5": "Da li možete redizajnirati postojeću veb stranicu?",
+    "answer_5": "Apsolutno! Specijalizujemo se za redizajn veb stranica kako bismo vašoj online prisutnosti pružili svež i moderan izgled. Bilo da je reč o vizuelnom preobražaju ili poboljšanjima funkcionalnosti, mi smo tu da pomognemo.",
+    "question_6": "Koje tehnologije koristite za veb razvoj?",
+    "answer_6": "Koristimo različite tehnologije u zavisnosti od zahteva projekta. Naša ekspertiza obuhvata, ali nije ograničena na HTML, CSS, JavaScript, PHP i popularne CMS platforme poput WordPress-a.",
+    "question_7": "Da li pružate usluge razvoja mobilnih aplikacija za iOS i Android?",
+    "answer_7": "Da, nudimo usluge razvoja mobilnih aplikacija za oba operativna sistema, iOS i Android. Naš iskusan tim obezbeđuje da vaša aplikacija besprekorno radi na svakom operativnom sistemu."
+  }
+}
