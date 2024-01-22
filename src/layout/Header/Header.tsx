@@ -83,11 +83,14 @@ const Header = () => {
         <AppBar
             position="fixed"
             sx={{
+                top: '50px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                maxWidth: '60%',
+                background: 'white',
+                borderRadius: '50px',
                 backgroundColor: 'rgba(255,255,255,.5)',
-                transition: 'all 300ms ease',
-                boxShadow: isScrolled ? '0 0 24px rgba(0,0,0,.1)' : '0 0 0',
                 backdropFilter: 'saturate(180%) blur(20px)',
-                padding: isScrolled ? '0 32px' : '32px',
             }}
         >
             <Toolbar>
