@@ -1,7 +1,15 @@
 'use client';
+import { useState } from 'react';
 import HeaderItem from '@/components/HeaderItem/HeaderItem';
-import { AppBar, Stack, Toolbar, Typography, useTheme } from '@mui/material';
-import { useEffect, useState } from 'react';
+import {
+    AppBar,
+    Button,
+    IconButton,
+    Stack,
+    Toolbar,
+    Typography,
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 /**
  * Renders Header
@@ -9,28 +17,7 @@ import { useEffect, useState } from 'react';
  * @returns {JSX.Element[]} a Header
  */
 const Header = () => {
-    const [isScrolled, setIsScrolled] = useState<boolean>(false);
-
-    /**
-     * Event listener for scroll
-     */
-    useEffect(() => {
-        window.addEventListener('scroll', (e: Event) => handleScroll(e));
-    }, []);
-
-    /**
-     * Handle scroll sets isScrolled attribute to true / false depending
-     * on scrollY value. If scroll value is greater than 0 then
-     * isScrolled is set to true.
-     *
-     * @param e - Event target from event listener
-     *
-     * @return {void}
-     */
-    const handleScroll = (e: Event) => {
-        const currentTarget = e.currentTarget as Window;
-        setIsScrolled(currentTarget.scrollY > 0);
-    };
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
     const headerItems: HeaderItems[] = [
         {
@@ -64,6 +51,15 @@ const Header = () => {
     ];
 
     /**
+     * Toggle menu click
+     *
+     * @returns {void}
+     */
+    const handleMenuToggle = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    /**
      * Renders header items based on the provided array of header items.
      *
      * @returns {JSX.Element[]} An array of JSX elements representing the rendered header items.
@@ -71,11 +67,16 @@ const Header = () => {
     const renderHeaderItems = () =>
         headerItems.map((headerItem: HeaderItems) => {
             return (
-                <HeaderItem
-                    href={headerItem.href}
-                    title={headerItem.title}
+                <Stack
+                    display="block"
+                    sx={{ mb: 1, width: 'auto' }}
                     key={`header-item-${headerItem.title}`}
-                />
+                >
+                    <HeaderItem
+                        href={headerItem.href}
+                        title={headerItem.title}
+                    />
+                </Stack>
             );
         });
 
@@ -86,19 +87,49 @@ const Header = () => {
                 top: '50px',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                maxWidth: '60%',
+                maxWidth: '600px',
                 background: 'white',
-                borderRadius: '50px',
+                borderRadius: '37px',
                 backgroundColor: 'rgba(255,255,255,.5)',
                 backdropFilter: 'saturate(180%) blur(20px)',
+                height: menuOpen ? '310px' : '64px',
+                transition: 'all 0.3s ease',
             }}
         >
-            <Toolbar>
-                <Typography variant="h4" style={{ flexGrow: 1 }}>
-                    Logo
-                </Typography>
-                <Stack display="flex" flexDirection="row">
-                    {renderHeaderItems()}
+            <Toolbar
+                sx={{
+                    flexDirection: 'column',
+                    padding: '8px 30px',
+                    overflow: 'hidden',
+                }}
+            >
+                <Stack
+                    flexDirection="row"
+                    alignItems="center"
+                    justifyContent="space-between"
+                    width="100%"
+                    height="100%"
+                >
+                    <Typography variant="h4" style={{ flexGrow: 1 }}>
+                        Logo
+                    </Typography>
+
+                    <Stack display="flex" flexDirection="row">
+                        <IconButton
+                            aria-label="menu"
+                            onClick={handleMenuToggle}
+                        >
+                            <MenuIcon
+                                sx={{ color: '#5a395b', fontSize: '2rem' }}
+                            />
+                        </IconButton>
+                    </Stack>
+                </Stack>
+                <Stack alignItems="flex-start" width="100%" mt={2}>
+                    <Stack borderRight="2px solid #5a395b">
+                        {menuOpen ? renderHeaderItems() : null}
+                    </Stack>
+                    <Stack></Stack>
                 </Stack>
             </Toolbar>
         </AppBar>

@@ -13,12 +13,10 @@ function ServiceCard({
         <Card
             sx={{
                 background: 'white',
-                width: { xs: '100%', md: 'calc(33.33% - 30px)' },
-                margin: '15px', // Adjust the margin between cards
-                height: '100%', // Set the height to 100%
+                width: { xs: 'calc(100% - 30px)', md: 'calc(33.33% - 30px)' },
+                margin: '15px',
                 display: 'flex',
                 flexDirection: 'column',
-                minHeight: '130px',
                 boxShadow: '0px 0px 15px 0px rgba(0,0,0,0.2)',
             }}
         >
@@ -28,20 +26,20 @@ function ServiceCard({
                 component="img"
                 sx={{
                     padding: 1,
-                    height: '140px',
+                    height: '250px',
                     objectFit: 'contain',
-                    width: 'auto',
                 }}
             />
-            <CardContent
-                sx={{
-                    minHeight: '130px',
-                }}
-            >
-                <Typography variant="body1" component="h3" fontSize="18px">
+            <CardContent>
+                <Typography
+                    variant="body2"
+                    component="h3"
+                    fontSize="20px"
+                    mb={1}
+                >
                     {service.title}
                 </Typography>
-                <Typography variant="body2" component="p" fontSize="14px">
+                <Typography variant="body1" component="p" fontSize="16px">
                     {service.description}
                 </Typography>
             </CardContent>
