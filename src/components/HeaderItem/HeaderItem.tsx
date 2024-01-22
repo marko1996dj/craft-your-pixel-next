@@ -16,8 +16,10 @@ function HeaderItem({ href, title }: { href: string; title: string }) {
     <Typography
       component={"a"}
       href={href}
-      fontSize="1.5rem"
-      mr={2}
+      fontSize="1rem"
+      fontWeight={500}
+      textTransform="uppercase"
+      mr={4}
       sx={{
         textDecoration: "none",
         position: "relative",
@@ -32,7 +34,6 @@ function HeaderItem({ href, title }: { href: string; title: string }) {
           transition: "width 0.3s ease-in-out",
         },
         "&:hover": {
-          color: theme.palette.text.secondary,
           "&::before": {
             width: "100%",
           },

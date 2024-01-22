@@ -9,12 +9,12 @@ import homepage from "../../../public/data/illustrations/homepage.json";
  */
 function Home() {
   return (
-    <Box padding={5} sx={{ backgroundColor: "#cccccc" }}>
-      <Stack flexDirection="column" alignItems="center" mt={5}>
+    <Box padding={5} mt={10} flexDirection={"row"}>
+      <Stack mt={5} width="45%">
         <Typography variant="h1">Craft Your Pixel</Typography>
         <Typography variant="h2">Your Vision, our Precision</Typography>
       </Stack>
-      <Stack flexDirection="row" justifyContent="center" mt={5}>
+      <Stack width="40%" mt={5}>
         <LottiePlayer src={homepage} style={{ width: "60%", height: "auto" }} />
       </Stack>
     </Box>
