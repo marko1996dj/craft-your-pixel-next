@@ -22,14 +22,23 @@ function Home() {
 
     return (
         <Box
-            mt={5}
             flexDirection={{ xs: 'column', md: 'row' }}
             display="flex"
             justifyContent="space-between"
-            sx={{ padding: '0 80px 40px ' }}
+            padding={{ xs: '15px', md: '50px 80px 40px' }}
             height="100vh"
         >
-            <Stack justifyContent="center" width={{ sx: '45%', md: '100%' }}>
+            <Stack
+                justifyContent="center"
+                alignItems={{ xs: 'center' }}
+                width={{ xs: '100%', md: '100%' }}
+                height={{ xs: '50%', md: '100%' }}
+                sx={{
+                    xs: {
+                        paddingTop: '60px',
+                    },
+                }}
+            >
                 <motion.div
                     initial="hidden"
                     animate="visible"
@@ -44,7 +53,11 @@ function Home() {
                     <Button sx={{ mt: 3 }}>Start your project</Button>
                 </motion.div>
             </Stack>
-            <Stack width={{ sx: '55%', md: '100%' }} justifyContent="center">
+            <Stack
+                width={{ xs: '100%', md: '100%' }}
+                height={{ xs: '50%', md: '100%' }}
+                justifyContent="center"
+            >
                 <Homepage />
             </Stack>
         </Box>

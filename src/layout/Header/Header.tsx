@@ -84,15 +84,15 @@ const Header = () => {
         <AppBar
             position="fixed"
             sx={{
-                top: '50px',
+                top: { xs: '0', md: '50px' },
                 left: '50%',
                 transform: 'translateX(-50%)',
-                maxWidth: '600px',
+                maxWidth: { xs: '100%', md: '600px' },
                 background: 'white',
-                borderRadius: '37px',
+                borderRadius: { xs: '0', md: '37px' },
                 backgroundColor: 'rgba(255,255,255,.5)',
                 backdropFilter: 'saturate(180%) blur(20px)',
-                height: menuOpen ? '310px' : '64px',
+                height: menuOpen ? '336px' : '64px',
                 transition: 'all 0.3s ease',
             }}
         >
@@ -125,11 +125,23 @@ const Header = () => {
                         </IconButton>
                     </Stack>
                 </Stack>
-                <Stack alignItems="flex-start" width="100%" mt={2}>
-                    <Stack borderRight="2px solid #5a395b">
+                <Stack
+                    alignItems="flex-start"
+                    width="100%"
+                    mt={2}
+                    padding={2}
+                    flexDirection="row"
+                >
+                    <Stack borderRight="2px solid #5a395b" minWidth="130px">
                         {menuOpen ? renderHeaderItems() : null}
                     </Stack>
-                    <Stack></Stack>
+                    <Stack padding={3}>
+                        <Typography variant="body1" fontSize="20px">
+                            We partner with brands that aspire to create
+                            outstanding products.
+                        </Typography>
+                        <Button sx={{ mt: 3 }}>Start your project</Button>
+                    </Stack>
                 </Stack>
             </Toolbar>
         </AppBar>

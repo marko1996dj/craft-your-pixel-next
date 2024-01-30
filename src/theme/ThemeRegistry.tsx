@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 import { NextAppDirEmotionCacheProvider } from './EmotionCache';
 import CssBaseline from '@mui/material/CssBaseline';
+import { GlobalStyles } from '@mui/system';
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({
@@ -91,6 +92,14 @@ export default function ThemeRegistry({
     return (
         <NextAppDirEmotionCacheProvider options={{ key: 'mui' }}>
             <ThemeProvider theme={theme}>
+                <GlobalStyles
+                    styles={{
+                        '::selection': {
+                            backgroundColor: '#e1c1e1',
+                            // color: '#fff',
+                        },
+                    }}
+                ></GlobalStyles>
                 <CssBaseline />
                 {children}
             </ThemeProvider>

@@ -13,10 +13,12 @@ function ServiceCard({
         <Card
             sx={{
                 background: 'white',
-                width: { xs: 'calc(100% - 30px)', md: 'calc(33.33% - 30px)' },
+                width: {
+                    xs: 'calc(100% - 30px)',
+                    sm: 'calc(49% - 30px)',
+                    md: 'calc(33.33% - 30px)',
+                },
                 margin: '15px',
-                display: 'flex',
-                flexDirection: 'column',
                 boxShadow: '0px 0px 15px 0px rgba(0,0,0,0.2)',
             }}
         >

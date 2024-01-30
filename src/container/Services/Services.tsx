@@ -66,12 +66,12 @@ function Services() {
     };
 
     return (
-        <Box padding={{ sx: '15px', md: '0 80px 40px' }}>
+        <Box padding={{ xs: '15px', md: '0 80px 40px' }}>
             <Typography textAlign="center" variant="h1" component="h2" mb={5}>
                 Our Expertise
             </Typography>
             <Stack
-                flexDirection={{ xs: 'column', md: 'row' }}
+                flexDirection="row"
                 justifyContent="center"
                 alignItems="stretch"
                 margin="30px auto 0"
